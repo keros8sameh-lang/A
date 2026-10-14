@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101225">
+<meta name="description" content="استوديو عربي لتجهيز طلبات إنشاء الفيديو بالذكاء الاصطناعي.">
+<title>فيديو AI | استوديو الفيديو الذكي</title>
+<style>
+:root{--bg:#0b0d1a;--panel:#14172a;--panel2:#191d35;--text:#f7f7ff;--muted:#aeb4d1;--line:#303653;--purple:#8d7cff;--cyan:#5ce1e6;--good:#77e0a1}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#25204e 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:1120px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 28px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;font-size:20px}.logo{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),var(--cyan));color:#0b0d1a;font-size:24px}.pill{border:1px solid #3b4163;color:#c9c5ff;background:#171a31;border-radius:999px;padding:8px 12px;font-size:12px}
+.hero{padding:28px 0 30px;max-width:760px}.eyebrow{color:var(--cyan);font-weight:750;font-size:13px}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.18;margin:12px 0}.hero p{color:var(--muted);font-size:16px;line-height:1.9;margin:0}
+.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);gap:18px;align-items:start}.card{background:linear-gradient(180deg,#171a30,#111426);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 70px #0002}.card h2{margin:0 0 6px;font-size:20px}.sub{margin:0 0 20px;color:var(--muted);font-size:13px;line-height:1.7}
+label{display:block;font-size:13px;font-weight:700;margin:16px 0 8px;color:#e7e8ff}textarea,select,input{width:100%;background:#0c0f20;color:var(--text);border:1px solid #353b5c;border-radius:12px;padding:13px;font:inherit;outline:none}textarea{min-height:125px;resize:vertical;line-height:1.8}textarea:focus,select:focus,input:focus{border-color:var(--purple);box-shadow:0 0 0 3px #8d7cff20}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hint{font-size:12px;color:var(--muted);line-height:1.7;margin-top:8px}.primary{width:100%;border:0;border-radius:13px;padding:15px;margin-top:20px;font:inherit;font-weight:850;color:#0b0d1a;background:linear-gradient(100deg,var(--cyan),#a9a0ff);cursor:pointer}.primary:disabled{opacity:.6;cursor:wait}
+.preview{min-height:220px;border:1px dashed #4c5278;border-radius:16px;background:radial-gradient(ellipse at 50% 40%,#2b2851,#101326 70%);display:grid;place-items:center;text-align:center;padding:20px}.play{width:62px;height:62px;border-radius:50%;background:#ffffff14;border:1px solid #ffffff3b;display:grid;place-items:center;font-size:25px;margin:0 auto 12px}.preview strong{display:block}.preview p{color:var(--muted);font-size:12px;line-height:1.7;margin:8px auto 0;max-width:260px}.status{display:none;margin-top:15px;padding:14px;border:1px solid #4e5681;border-radius:13px;background:#0d1020;line-height:1.8;font-size:13px;overflow-wrap:anywhere}.status.show{display:block}.status small{color:var(--muted)}.steps{display:grid;gap:12px;margin-top:18px}.step{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid #2c3250;border-radius:14px;background:#111529}.num{width:28px;height:28px;flex:0 0 28px;border-radius:9px;background:#28254b;color:#c5beff;display:grid;place-items:center;font-weight:800}.step b{font-size:13px}.step p{font-size:12px;line-height:1.7;color:var(--muted);margin:4px 0 0}.footer{padding:28px 0 10px;color:#858cac;text-align:center;font-size:12px;line-height:1.8}.warning{color:#ffdda2}.hidden{display:none}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.wrap{padding:16px}.top{padding-bottom:14px}.hero{padding:22px 0}.card{padding:17px}.pill{font-size:11px}}@media(max-width:400px){.grid2{grid-template-columns:1fr}.brand{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">▶</div><span>فيديو AI <span style="color:var(--cyan)">Studio</span></span></div><div class="pill">نسخة تجريبية قابلة للتطوير</div></header>
+<section class="hero"><div class="eyebrow">حوّل فكرتك إلى مشهد</div><h1>اصنع عالمك، <span style="color:var(--cyan)">بكلماتك.</span></h1><p>اكتب وصف الفيديو الذي تتخيله، وحدد الأسلوب والمدة. هذه النسخة تجهّز طلبك وتختبر واجهة الموقع؛ توليد الفيديو الحقيقي سيتفعّل بعد ربط مزوّد فيديو مناسب.</p></section>
+<main class="layout">
+<section class="card">
+<h2>إنشاء فيديو جديد</h2><p class="sub">كلما كان الوصف أدق، كانت الفكرة أوضح لمزوّد الذكاء الاصطناعي.</p>
+<form id="videoForm">
+<label for="prompt">ما الفيديو الذي تريد إنشاءه؟</label>
+<textarea id="prompt" maxlength="3000" required placeholder="مثال: مشهد سينمائي لمدينة مستقبلية في مصر وقت الغروب، كاميرا تتحرك بين المباني، إضاءة واقعية وتفاصيل دقيقة..."></textarea>
+<div class="hint">اكتب وصفًا من 8 أحرف على الأقل. لا تضع كلمات مرور أو بيانات شخصية هنا.</div>
+<div class="grid2">
+<div><label for="style">أسلوب الفيديو</label><select id="style"><option value="cinematic">سينمائي واقعي</option><option value="animation">رسوم متحركة</option><option value="anime">أنمي</option><option value="documentary">وثائقي</option><option value="fantasy">خيالي</option><option value="commercial">إعلان تجاري</option></select></div>
+<div><label for="aspect">مقاس الفيديو</label><select id="aspect"><option value="16:9">أفقي 16:9 — يوتيوب</option><option value="9:16">رأسي 9:16 — ريلز</option><option value="1:1">مربع 1:1</option></select></div>
+<div><label for="duration">المدة المطلوبة</label><select id="duration"><option value="1">دقيقة واحدة</option><option value="2">دقيقتان</option><option value="3">3 دقائق</option><option value="4">4 دقائق</option><option value="5">5 دقائق</option><option value="6">6 دقائق</option><option value="7">7 دقائق</option><option value="8">8 دقائق</option><option value="9">9 دقائق</option><option value="10">10 دقائق</option></select></div>
+<div><label for="language">لغة الصوت (إن توفرت)</label><select id="language"><option value="ar">العربية</option><option value="ar-eg">العربية المصرية</option><option value="en">الإنجليزية</option><option value="none">بدون صوت</option></select></div>
+</div>
+<label for="quality">الجودة المطلوبة</label><select id="quality"><option value="standard">قياسية — أفضل للتجربة</option><option value="high">عالية — حسب الخدمة</option></select>
+<button class="primary" id="submitBtn" type="submit">✨ تجهيز طلب الفيديو</button>
+</form>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</section>
+<aside class="card">
+<h2>معاينة الاستوديو</h2><p class="sub">بعد ربط خدمة توليد حقيقية، يمكن عرض حالة المهمة ورابط الفيديو النهائي هنا.</p>
+<div class="preview"><div><div class="play">▶</div><strong id="previewTitle">مساحة الفيديو الخاص بك</strong><p id="previewText">ابدأ بوصف فكرتك. في الوقت الحالي لن يتم إنشاء ملف فيديو فعلي.</p></div></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><b>اكتب الفكرة</b><p>حدّد الشخصيات والمكان وحركة الكاميرا والأجواء.</p></div></div>
+<div class="step"><div class="num">2</div><div><b>جهّز الطلب</b><p>الموقع يتحقق من البيانات ويرسلها إلى الخادم التجريبي.</p></div></div>
+<div class="step"><div class="num">3</div><div><b>اربط خدمة الفيديو لاحقًا</b><p>يحتاج التوليد الحقيقي إلى مزوّد API ومفتاح سري محفوظ على الخادم، وقد يتطلب رصيدًا مدفوعًا.</p></div></div>
+</div>
+</aside>
+</main>
+<footer class="footer">فيديو AI Studio · مشروع بداية مفتوح للتطوير<br><span class="warning">تنبيه: اختيار مدة 10 دقائق لا يعني أن مزوّد الخدمة يستطيع توليد مقطع واحد بهذه المدة؛ قد نحتاج إلى إنشاء مقاطع وتجميعها.</span></footer>
+</div>
+<script>
+const form = document.getElementById('videoForm');
+const btn = document.getElementById('submitBtn');
+const statusBox = document.getElementById('status');
+const promptEl = document.getElementById('prompt');
+const previewTitle = document.getElementById('previewTitle');
+const previewText = document.getElementById('previewText');
+
+promptEl.addEventListener('input', () => {
+  previewTitle.textContent = promptEl.value.trim() ? 'فكرتك جاهزة للتجهيز' : 'مساحة الفيديو الخاص بك';
+  previewText.textContent = promptEl.value.trim() ? promptEl.value.trim().slice(0, 160) : 'ابدأ بوصف فكرتك. في الوقت الحالي لن يتم إنشاء ملف فيديو فعلي.';
+});
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  btn.disabled = true;
+  btn.textContent = 'جارٍ تجهيز الطلب...';
+  statusBox.className = 'status show';
+  statusBox.textContent = 'جارٍ الاتصال بالخادم...';
+  const body = {
+    prompt: promptEl.value,
+    style: document.getElementById('style').value,
+    aspectRatio: document.getElementById('aspect').value,
+    duration: Number(document.getElementById('duration').value),
+    language: document.getElementById('language').value,
+    quality: document.getElementById('quality').value
+  };
+  try {
+    const response = await fetch('/api/videos', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(body)
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'حدث خطأ أثناء إرسال الطلب.');
+    statusBox.innerHTML = '<strong>تم تجهيز الطلب التجريبي ✓</strong><br>' +
+      '<small>رقم الطلب: ' + escapeHtml(data.id) + '</small><br>' +
+      '<span>' + escapeHtml(data.message) + '</span><br>' +
+      '<small>الحالة: ' + escapeHtml(data.status) + ' · المدة المطلوبة: ' + escapeHtml(String(data.duration)) + ' دقيقة</small>';
+  } catch (err) {
+    statusBox.textContent = (err.message || 'تعذر الاتصال بالخادم.') + ' إذا فتحت ملف HTML مباشرة من الهاتف، شغّل المشروع على استضافة Node.js أولًا.';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '✨ تجهيز طلب الفيديو';
+  }
+});
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+</script>
+</body>
+</html>
